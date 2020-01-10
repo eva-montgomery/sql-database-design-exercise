@@ -1,0 +1,25 @@
+{
+  "name": "sql-database-design-exercise",
+  "version": "1.0.0",
+  "description": "Using the `sql-exercises` code for reference, create database projects for each of the following topics:",
+  "main": "index.js",
+  "scripts": {
+    "db:delete": "dropdb pet-browser",
+    "db:create": "createdb pet-browser",
+    "db:schema": "psql -f schema.sql pet-browser",
+    "db:seed": "psql -f seed.sql pet-browser",
+    "db:reset": "npm run db:delete && npm run db:create && npm run db:schema && npm run db:seed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radishmouse/sql-database-design-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radishmouse/sql-database-design-exercise/issues"
+  },
+  "homepage": "https://github.com/radishmouse/sql-database-design-exercise#readme"
+}
